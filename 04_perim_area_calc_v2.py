@@ -33,6 +33,7 @@ print()
 print("**** Area Perimeter Calculator *****")
 print()
 
+# Start of calculator loop
 keep_going = ""
 while keep_going == "":
 
@@ -42,7 +43,7 @@ while keep_going == "":
     # Calculate area (width x height)
     area = width * height
 
-    # Calculate perimeter (wisth x height) x 2
+    # Calculate perimeter (width x height) x 2
     perimeter = 2 * (width + height)
 
     # Output area and perimeter
