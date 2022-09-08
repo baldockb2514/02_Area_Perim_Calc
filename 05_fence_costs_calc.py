@@ -41,19 +41,25 @@ while keep_going == "":
     # width, length and cost_per_m of the fencing
     width = num_check("Width: ")
     length = num_check("Length: ")
-    cost_per_m = num_check("Price per meter: ")
+    cost_per_m = num_check("Cost / m: $")
 
     # Calulate perimeter (width + height) x 2
     perimeter = 2 * (width + length)
 
     # Calculate the cost of the fencing (perimeter x price / meter)
-    
+    cost = perimeter * cost_per_m
 
     # Output the perimeter and cost of the fencing
+    print()
+    print("Perimeter: {:.2f} units".format(perimeter))
+    print("Cost: ${:.2f}".format(cost))
+    print()
 
-    
     keep_going = input("Press <enter> to keep going or any key to quit: ")
+    print()
+    print("-" * 30)
+    print()
     
 print()
-print("Thanks for using the Fencing cost calculator")
+print("Thank you for using the Fencing cost calculator")
 print()
